@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yellow Brick Road</title>
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <!-- Links StyleSheet to index.html-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<style>
+    #menu {
+        background: white;
+    }
+</style>
+<body>
+
+<div id="menu" class="ui top fixed secondary pointing menu">
+    <a href="index.html" class="active item">
+        Home
+    </a>
+    <a href="bios.html" class="item">
+       Country/City Bios
+    </a>
+    <div class="ui dropdown item">
+        My Experience
+        <i class="dropdown icon"></i>
+        <div class="menu" id="menu">
+            <a href="experience.html" class="item">My Expereince</a>
+            <a href="liveblog.html" class="item">Live Blog</a>
+        </div>
+        </div>
+    <a href="contact.html" class="item">
+        Contact Me
+    </a>
+    <a href="subscription.html" class="item">
+        Subscription
+    </a>
+    <div class="right menu">
+        <h3 class="item" style="font-family: 'Ewert', cursive; ">Yellow Brick Road</h3>
+    </div>
+</div>
+<div class="fade">
+    <div><img style="height: 620px;" class="ui centered fluid image" src="images/England.jpg"></div>
+    <div><img style="height: 620px;" class="ui centered fluid image" src="images/France.jpg"></div>
+    <div><img style="height: 620px;" class="ui centered fluid image" src="images/Ireland.jpeg"></div>
+</div>
+<h2 class="ui center aligned icon header">
+    <i class="circular newspaper icon"></i>
+    Mission Statement
+</h2>
+<p class="ui segment" style="text-align: center">
+    This is where the mission statement will go
+</p>
+<!-- Predefined footer area -->
+<div class="ui bottom inverted menu">
+    <div class="left menu">
+        <p style="color: white;">Yellow Brick Road 2016. Trade Marked</p>
+    </div>
+    <div class="right menu">
+    <i class="icon big inverted facebook"></i>
+    <i class="icon big inverted instagram"></i>
+    <i class="icon big inverted snapchat"></i>
+        </div>
+</div>
+
+<script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script src="script.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function(){
+        $('.fade').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+    });
+    $('#menu')
+            .dropdown()
+    ;
+</script>
+</body>
+</html>

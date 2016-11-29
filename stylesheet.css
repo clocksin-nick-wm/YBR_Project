@@ -1,0 +1,21 @@
+img {
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.ui_bottom_fixed_inverted_menu{
+    height: 200px;
+}
+.fade > img{
+    height: 300px;
+}
+
+.ui.three.cards{
+    text-align: center;
+}
+.column {
+    text-align: center;
+}
